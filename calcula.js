@@ -1,7 +1,7 @@
 const prompt = require('prompt-sync')();
 function factoriel(n) {
     if (n == 0 || n == 1) {
-        return 1; // Le factoriel de 0 ou 1 est 1
+        return 1;
     } else {
         return n * factoriel(n - 1); 
     }
@@ -9,66 +9,66 @@ function factoriel(n) {
 
 for (let i = 0; i < 80000000000; i++) {
 
-const operateur = prompt("Entrez un opérateur (+, -, *, /, ^, v ,!) : ");
+const operateur = prompt("Enter an operator (+, -, *, /, ^, v ,!) : ");
 
 
 
 
 switch (operateur) {
     case '+':
-        num1 = prompt("Entrez un nombre : ");
- num2 = prompt("Entrez un autre nombre : ");
+        num1 = prompt("Enter a number  : ");
+ num2 = prompt("Enter the second number : ");
  addition=parseFloat(num1)+parseFloat(num2);
-        console.log(`Résultat : ${addition}`);
+        console.log(`Result : ${addition}`);
         break;
     
     case '-':
-         num1 = prompt("Entrez un nombre : ");
- num2 = prompt("Entrez un autre nombre : ");
+         num1 = prompt("Enter a number : ");
+ num2 = prompt("Enter the second number : ");
  
 
-        console.log(`Résultat : ${num1 - num2}`);
+        console.log(`Result : ${num1 - num2}`);
         break;
     
     case '*':
-        num1 = prompt("Entrez un nombre : ");
-        num2 = prompt("Entrez un autre nombre : ");
-        console.log(`Résultat : ${num1 * num2}`);
+        num1 = prompt("Enter a number : ");
+        num2 = prompt("Enter the second number: ");
+        console.log(`Result: ${num1 * num2}`);
         break;
     
     case '/':
-        num1 = prompt("Entrez un nombre : ");
-        num2 = prompt("Entrez un autre nombre : ");
+        num1 = prompt("Enter a number : ");
+        num2 = prompt("Enter the second number : ");
         if (num2 === 0) {
             console.log("Erreur : Division par zéro.");
         } else {
-            console.log(`Résultat : ${num1 / num2}`);
+            console.log(`Result : ${num1 / num2}`);
         }
         break;
 
     case '^':
-        num1 = prompt("Entrez un nombre : ");
-        num2 = prompt("Entrez un autre nombre : ");
-        console.log(`Résultat : ${Math.pow(num1, num2)}`);
+        num1 = prompt("Enter a number : ");
+        num2 = prompt("Enter the second number : ");
+        console.log(`Result : ${Math.pow(num1, num2)}`);
         break;
     
     case 'v': 
-    num1 = prompt("Entrez un nombre : ");
+    num1 = prompt("Enter a number : ");
         if (num1 < 0) {
             console.log("Erreur ");
         } else {
-            console.log(`Résultat : ${Math.sqrt(num1)}`);
+            console.log(`Result : ${Math.sqrt(num1)}`);
         }
         break;
          
     case '!': 
-    num1 = prompt("Entrez un nombre : ");
+    num1 = prompt("Enter a number : ");
 
-            console.log(`Résultat : ${factoriel(num1)}`);
+            console.log(`Result : ${factoriel(num1)}`);
         
         break;
 
     default:
-        console.log("Opérateur invalide !");
+        console.log("Invalid Operator !");
 }
 }
